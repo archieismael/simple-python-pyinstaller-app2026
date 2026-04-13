@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-                sh "var/lib/jenkins/.local/bin/pyinstaller --onefile sources/add2vals.py" 
+                sh "/var/lib/jenkins/.local/bin/pyinstaller --onefile sources/add2vals.py" 
             }
             post {
                 success {
